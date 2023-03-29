@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <div class="heading">
+        <H1>The Weeknd</H1>
+    </div>
+
+    <div class="img-slide">
+        <div class="mySlides">
+            <img src="img/weeknd-2.webp" style="width:100%">  
+            <p class="Quote-txt1"> “Baby I’m a pro at letting go, <br> I love it when they come and go.”</p>  
+        </div>
+        <div class="mySlides">
+            <img src="img/weeknd-3.jpg" style="width:100%">  
+            <p class="Quote-txt2"> “I chose the life, <br> then I realized she might have been the one,<br> I let her go for a little fun.”</p>  
+        </div>
+        <div class="mySlides">
+            <img src="img/weeknd-4.png" style="width:100%">  
+            <p class="Quote-txt3">“I was very camera shy. <br> People like hot girls,<br> so I put my music to hot girls and it just became a trend.<br> The whole ‘enigmatic artist’ thing, I just ran with it.<br> No one could find pictures of me.”</p>  
+        </div>
+        <div class="mySlides">
+            <img src="img/weeknd-6.webp" style="width:100%">  
+            <p class="Quote-txt4">“It’s always been in me.<br> I just had to be confident enough to let it out.” </p>  
+        </div>
+        <div class="mySlides">
+            <img src="img/weeknd-1.webp" style="width:100%">  
+            <p class="Quote-txt5">“Push it to the limit,<br> push it through the pain.”</p>  
+        </div>
+        <div class="mySlides">
+            <img src="img/weeknd-5.jpg" style="width:100%">  
+            <p class="Quote-txt6">“I don’t care about you,<br> why you worried about me?”</p>  
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player-track-meta">
+          <p>Blinding Lights</p>
+          <p><span>The Weeknd</span></p>
+        </div>
+        <div class="player-controls">
+          <button class="player-play-btn" 
+                  role="button" 
+                  aria-label="Play"
+                  data-playing="false"
+                  >
+            <div class="player-icon-play">
+           <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+              </div>
+            
+            <div class="player-icon-pause hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+            </div>
+          </button>
+          <div class="player-timeline">
+            <span class="player-time player-time-current">00:00</span>
+            <div class="player-progress">
+              <div class="player-progress-filled"></div>
+            </div>
+            <span class="player-time player-time-duration">00:00</span>
+          </div>
+          <div class="player-volume-container">
+                <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+          </div>
+        </div>
+        <audio src="https://fine.sunproxy.net/file/di9zclpUcHpZeStLM0NJU3pVK0E3Uy9kaFJnRlRjZkxieUVMVDd1dFkxcjhBejFDcndwM0d4YXNqKzl0clQzaUJGV3NhcVozbEpNb0tvRkdRODZ5L0s3d2RybXQra2Q3K1ZGZFk5WEhWOXM9/The_Weeknd_-_Blinding_Lights_(ColdMP3.com).mp3" crossorigin="anonymous" ></audio>
+      </div>
+
+      <div class="flex">
+        <div class="profile">
+            <img class="wkn-img" src="img/weeknd profile.jpeg">
+            <h2>The Weeknd</h2>
+            <p id="date">16 February 1990<br>(age 33 years)</p>
+        </div>
+        <div class="bio">
+            <h2>About The Weeknd</h2>
+            <p>Abel Makkonen Tesfaye (born February 16, 1990), 
+               known professionally as the Weeknd, is a Canadian singer, songwriter, and actor.
+               Known for his sonic versatility and dark lyricism, his music explores escapism, romance, and melancholia,
+                and is often inspired by personal experiences. His accolades include four Grammy Awards,
+                twenty Billboard Music Awards, twenty-two Juno Awards,
+                six American Music Awards, two MTV Video Music Awards, a Latin Grammy Award, 
+               and nominations for an Academy Award and a Primetime Emmy Award.
+            </p>
+            <p>
+            Born and raised in Toronto, Ontario, Tesfaye began his career in 2009 by anonymously releasing music on
+            YouTube. Two years later, he co-founded the XO record label and released the mixtapes House of Balloons, 
+            Thursday and Echoes of Silence, which gained recognition for his style of contemporary and alternative 
+            R&B and the mystique surrounding his identity. In 2012, he signed with Republic Records and rereleased 
+            the mixtapes in the compilation album Trilogy. He explored dark wave in his debut studio album Kiss Land 
+            (2013), which debuted at number two on the US Billboard 200. After its release, Tesfaye began contributing 
+            to film soundtracks, with his acclaimed single "Earned It" from Fifty Shades of Grey (2015) winning the 
+            Grammy Award for Best R&B Performance, while also being nominated for the Academy Award for Best Original Song.
+            </p>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.heading{
+    font-family: fantasy;
+    position: relative;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 40px;
+    animation: flicker 1.5s infinite alternate;     
+}
+
+@keyframes flicker {  
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+
+.mySlides {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;   
+}
+
+.body{
+    background-color: rgb(31, 31, 31);
+}
+.img-slide{
+    background-color: rgb(12, 12, 12);
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    z-index: 10;
+    font-family: sans-serify;
+    padding-right: 20px;
+}
+
+.Quote-txt1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    overflow:auto;
+}
+
+.Quote-txt2{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    overflow:auto;
+}
+.Quote-txt3{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    overflow:auto;
+}
+
+.Quote-txt4{
+    position: absolute;
+    bottom: 50px;
+    left: 55px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    overflow:auto;
+}
+.Quote-txt5{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    overflow:auto;
+}
+.Quote-txt6{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: rgb(255, 255, 255); 
+    font-size: 40px;
+    overflow:auto;
+}
+
+.hidden {
+    display: none;
+}
+.player {
+    max-width: 1000px;
+    margin: 7rem auto;
+    background: white;
+    padding: 36px 32px 24px 32px;
+    border-radius: 14px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+ }
+  .player-track-meta {
+    text-align: center;
+  }
+  .player-track-meta p {
+    margin: 0;
+    font-size: 20px;
+    color: #0e0e0e;
+    font-weight: 700;
+  }
+  .player-track-meta span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 2px;
+    position: relative;
+    top: 1px;
+    color: #a3a3a3;
+  }
+  .player-controls {
+    display: flex;
+    align-items: center;
+  }
+  .player-play-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+  }
+  .icon-container {
+    fill: transparent;
+    stroke: none;
+  }
+  .player-play-btn:hover {
+    fill: #444444;
+  }
+  .player-play-btn svg { 
+    color: #0e0e0e;
+    position: relative;
+    left: 0.5px;
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+  .player-play-btn:hover svg {
+    color: #ffffff;
+  }
+  .player-timeline {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .player-progress {
+    display: flex;
+    position: relative;
+    height: 6px;
+    background: #a3a3a3;
+    border-radius: 25px;
+    margin: 0 5px;
+    flex: 10;
+    flex-basis: 100%;
+    overflow: hidden;
+  }
+  .player-progress-filled {
+    height: 6px;
+    background: #0e0e0e;
+    flex: 0;
+    flex-basis: 0%;
+    border-radius: 25px;
+  }
+  .player-time {
+    padding: 2px 5px;
+  }
+  .player-volume-container {
+    width: 15%;
+  }
+  .player-volume {
+    height: 28px;
+
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+  }
+  .player-volume:focus {
+    outline: none;
+  }
+  .player-volume::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #0e0e0e;
+    border-radius: 10px;
+  }
+  .player-volume::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 100px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+  }
+  .player-volume:focus::-webkit-slider-runnable-track {
+    background: #0e0e0e;
+  }
+  .player-volume::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: #0e0e0e;
+    border-radius: 10px;
+  }
+  .player-volume::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 100px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+    margin-top: -4px;
+  }
+  .player-volume::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+
+    background: #0e0e0e;
+    border-radius: 10px;
+  }
+  .player-volume::-ms-fill-lower {
+    background: #0e0e0e;
+    border-radius: 10px;
+  }
+  .player-volume::-ms-fill-upper {
+    background: #0e0e0e;
+    border-radius: 10px;
+  }
+  .player-volume::-ms-thumb {
+    margin-top: 1px;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+  }
+  .player-volume:focus::-ms-fill-lower {
+    background: #38bdf8;
+  }
+  .player-volume:focus::-ms-fill-upper {
+    background: #38bdf8;
+  }
+
+.bio {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.bio h2{
+    font-size: 50px;
+    margin-top:0;
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    color: #fff;
+    background-color: #0e0e0e;
+}
+.wkn-img{
+    border-radius:100%;
+    height: 250px;
+    width: 250px;
+}
